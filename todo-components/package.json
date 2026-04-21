@@ -4,14 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite build && vite preview",
+    "dev": "echo '\n**************************************************************************\nThis package is consumed by the host app. Run [ npm run preview ] instead.\n**************************************************************************\n'",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.2.2",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
